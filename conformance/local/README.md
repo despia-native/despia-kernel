@@ -1,14 +1,14 @@
-# The Despiabase corpus
+# The Despia Local corpus
 
 Platform-neutral fixtures for the on-device data plane
-(`OpenSource/Documentation/architecture/proposals/local-ai-engine.md` §4.7 — Despiabase:
+(`OpenSource/Documentation/architecture/proposals/local-ai-engine.md` §4.7 — Despia Local:
 SQLite plus sqlite-vec, snapshots and restores as first-class verbs). Same authority model
 as `ai/`: hand-authored, every lane runs them in verify mode, no recording.
 
 | Runtime | Runner | Lane |
 |---|---|---|
-| TS binding | `OpenSource/Base/conformance/run.ts` | per-PR |
-| Kotlin binding (JVM SQLite) | `OpenSource/Base/bindings/kotlin` JUnit | per-PR |
+| TS binding | `OpenSource/Local/conformance/run.ts` | per-PR |
+| Kotlin binding (JVM SQLite) | `OpenSource/Local/bindings/kotlin` JUnit | per-PR |
 | Swift binding | the `conformance-ai` mac lane | per-PR once the lane exists |
 
 ## Why these three folders
